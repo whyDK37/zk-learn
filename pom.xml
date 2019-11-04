@@ -10,19 +10,20 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <curator.version>4.2.0</curator.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-recipes</artifactId>
-            <version>4.2.0</version>
+            <version>${curator.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.curator/curator-test -->
         <dependency>
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-test</artifactId>
-            <version>4.2.0</version>
+            <version>${curator.version}</version>
             <!--<scope>test</scope>-->
         </dependency>
 
