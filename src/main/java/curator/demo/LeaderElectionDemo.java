@@ -1,4 +1,4 @@
-package why.demo;
+package curator.demo;
 
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
@@ -17,7 +17,7 @@ public class LeaderElectionDemo {
                 .build();
         client.start();
 
-        LeaderSelector leader = new LeaderSelector(client, "/leader", new LeaderSelectorListener() {
+        LeaderSelector leader = new LeaderSelector(client, "/curator/leader", new LeaderSelectorListener() {
             @Override
             public void takeLeadership(CuratorFramework client) throws Exception {
                 System.out.println("taker leader ship");

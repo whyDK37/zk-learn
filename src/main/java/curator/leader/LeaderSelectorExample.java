@@ -1,5 +1,5 @@
 
-package leader;
+package curator.leader;
 
 import com.google.common.collect.Lists;
 import org.apache.curator.utils.CloseableUtils;

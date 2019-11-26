@@ -1,4 +1,4 @@
-package why.demo;
+package curator.demo;
 
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
